@@ -1,0 +1,37 @@
+//  UNIVERSIDADE CATÓLICA DE BRASÍLIA
+//  CURSO BACHAREL EM CIÊNCIAS DA COMPUTAÇÃO
+//  DISCIPLINA: ALGORITMOS E PROGRAMAÇÃO ESTRUTURADA - GPE02M0392
+//  DOCENTE: VALDEMIR DOS SANTOS SILVA
+//  DISCENTE: HYGOR GABRIEL MEIRELES - UC22100580
+//	AULA DIA 21/03/2023
+
+// 	QUESTÃO #3: Leia dois valores inteiros. A seguir, calcule o produto entre estes dois valores e atribua
+//  esta operação à variável PROD. A seguir mostre a variável PROD com mensagem
+//  correspondente
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() 
+{
+//SETLOCALE PARA PERMITIR PONTUAÇÃO GRÁFICA	
+	setlocale(LC_ALL, "Portuguese");
+//DECLARAÇÃO DE VARIÁVEIS
+ 	int a, b, prod;
+//IMPRESSÃO DA SOLICITAÇÃO AO USUÁRIO DO PRIMEIRO NÚMERO 	
+ 	printf("Informe o primeiro numero:");
+//SCANF PARA O USUÁRIO INFORMAR O VALOR DO PRIMEIRO NÚMERO	
+ 	scanf("%d", &a);
+//IMPRESSÃO DA SOLICITAÇÃO AO USUÁRIO DO SEGUNDO NÚMERO  	
+ 	printf("Informe o segundo numero:");
+//SCANF PARA O USUÁRIO INFORMAR O VALOR DO SEGUNDO NÚMERO 	
+ 	scanf("%d", &b);
+//LIMPA TELA PARA EXIBIR APENAS O PRODUTO POSTERIORMENTE 	
+	system("cls"); 	
+//ATRIBUINDO A VARIÁVEL PROD O VALOR DE A * B INFORMADOS PELO USUÁRIO 
+ 	prod = a * b;	
+//IMPRESSÃO FINAL DA VARIÁVEL PROD 	
+ 	printf("PROD = %d", prod);
+ 	return 0;
+ }	
